@@ -1,3 +1,3 @@
 # ilaydagurocak.github.io
-İlayda Gürocak portfolio
+İlayda Gürocak Portfolio
 🌐 Live site: https://ilaydagurocak.github.io

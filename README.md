@@ -1,3 +1,3 @@
 # ilaydagurocak.github.io
-İlayda Gürocak – iOS Developer portfolio
+İlayda Gürocak portfolio
 🌐 Live site: https://ilaydagurocak.github.io

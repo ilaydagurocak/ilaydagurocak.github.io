@@ -214,16 +214,18 @@
 
 <header class="wrap">
   <h1>İlayda Gürocak</h1>
-  <p class="role">Computer Engineer · Software &amp; Applied AI/NLP</p>
+  <p class="role">Computer Engineer</p>
   <p class="intro">
     Computer engineer with hands-on experience in mobile (iOS and Android), backend and data-driven
-    development, now focused on applied NLP and document intelligence.
+    development. I now focus on applied NLP and document intelligence, and on turning what players and
+    users say into product decisions.
   </p>
   <p class="intro intro-more">
     I built and shipped an end-to-end Turkish legal-text extraction system that combines rule-based
     information extraction, fine-tuned transformers and few-shot LLMs, with label-free verification,
-    automated tests and CI. I&#39;m comfortable owning a problem from data collection to API deployment,
-    and measuring the results honestly.
+    automated tests and CI. Most recently, I analyzed 5,400+ App Store reviews of Turkish mobile games
+    with an open-source LLM and turned player feedback into product recommendations with measurable KPIs.
+    I&#39;m comfortable owning a problem from data collection to deployment, and measuring the results honestly.
   </p>
   <nav class="links" aria-label="Contact links">
     <a class="btn primary" href="mailto:illaydagurocak@icloud.com">Email me</a>
@@ -235,6 +237,54 @@
 <main>
   <section class="wrap" id="projects">
     <h2>Projects</h2>
+
+    <!-- ===== Player Feedback Radar ===== -->
+    <article class="project">
+      <div class="project-head">
+        <h3>Player Feedback Radar</h3>
+        <span class="status">Product analytics</span>
+        <span class="status">Live dashboard</span>
+      </div>
+      <p class="tagline">What players complain about in Turkish mobile games, and what a product team could do about it.</p>
+
+      <div class="project-body">
+        <div>
+          <p>
+            I collected 5,400+ App Store reviews of games from Dream Games, Peak, Rollic and Gulliver&#39;s Games
+            across four markets (US, UK, Germany, Türkiye), labelled them with an open-source language model
+            and turned the patterns into product recommendations for each game.
+          </p>
+          <h4>What I did</h4>
+          <ul>
+            <li>Designed a 13-category player feedback taxonomy (difficulty, monetization, ads, events, bugs, UX and more), each tied to a product KPI</li>
+            <li>Labelled every review for topic, sentiment, severity and churn signal with Qwen2.5-7B on a free Colab GPU, and checked the results by hand (97.5% sentiment and main-topic accuracy)</li>
+            <li>Found each game&#39;s main product risk, e.g. 15.7% of Royal Match reviews say the game is not what its ads show, and mid-game ads frustrate even happy Word Tiles GO players</li>
+            <li>Proposed three testable improvements per game with the metric to watch (retention, IAP conversion, ad revenue)</li>
+            <li>Built an interactive dashboard where every number traces back to its data</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Tech</h4>
+          <ul class="tags">
+            <li>Python</li><li>pandas</li><li>Qwen2.5-7B</li><li>LLM evaluation</li>
+            <li>d3.js</li><li>Google Colab</li><li>GitHub Pages</li>
+          </ul>
+          <h4>Links</h4>
+          <p><a href="https://ilaydagurocak.github.io/player-feedback-radar/dashboard.html" target="_blank" rel="noopener">Live dashboard</a> · <a href="https://github.com/ilaydagurocak/player-feedback-radar" target="_blank" rel="noopener">Code on GitHub</a></p>
+          <h4>Note</h4>
+          <p>Independent portfolio work, not affiliated with the studios mentioned.</p>
+        </div>
+      </div>
+
+      <div class="gallery" tabindex="0" aria-label="Player Feedback Radar dashboard screenshots, scroll horizontally">
+        <figure class="shot"><div class="browser"><div class="bar" aria-hidden="true"><span></span><span></span><span></span></div><img src="images/pfr/overview.jpg" alt="Dashboard overview table comparing four games" loading="lazy"></div><figcaption>Games at a glance</figcaption></figure>
+        <figure class="shot"><div class="browser"><div class="bar" aria-hidden="true"><span></span><span></span><span></span></div><img src="images/pfr/heatmap.jpg" alt="Complaint heatmap by game and category" loading="lazy"></div><figcaption>Complaint map</figcaption></figure>
+        <figure class="shot"><div class="browser"><div class="bar" aria-hidden="true"><span></span><span></span><span></span></div><img src="images/pfr/royal-match.jpg" alt="Royal Match findings and recommendations" loading="lazy"></div><figcaption>Royal Match deep dive</figcaption></figure>
+        <figure class="shot"><div class="browser"><div class="bar" aria-hidden="true"><span></span><span></span><span></span></div><img src="images/pfr/word-tiles-go.jpg" alt="Word Tiles GO findings and recommendations" loading="lazy"></div><figcaption>Word Tiles GO deep dive</figcaption></figure>
+        <figure class="shot"><div class="browser"><div class="bar" aria-hidden="true"><span></span><span></span><span></span></div><img src="images/pfr/store-gap.jpg" alt="Store rating compared with written review rating" loading="lazy"></div><figcaption>Silent majority vs. vocal critics</figcaption></figure>
+      </div>
+      <p class="hint">Scroll sideways to see more screens. The dashboard is in Turkish.</p>
+    </article>
 
     <!-- ===== MevzuatRadar ===== -->
     <article class="project">

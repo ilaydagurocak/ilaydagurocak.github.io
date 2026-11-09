@@ -114,7 +114,7 @@
     <div class="wrap">
       <div class="section-head">
         <h2 id="work-title" class="display">Selected work</h2>
-        <p class="lede">Nineteen things I designed, built and shipped, from LLM pipelines to party games. Open any card for the full case study.</p>
+        <p class="lede"><span data-project-count>24</span> things I designed, built and shipped, from LLM pipelines to party games. Open any card for the full case study.</p>
       </div>
       <div class="filters" role="toolbar" aria-label="Filter projects by category" id="filters"></div>
       <div class="bento" id="bento" aria-live="polite"></div>
@@ -129,7 +129,7 @@
     <div class="wrap">
       <div class="section-head">
         <h2 id="lab-title" class="display">AI lab</h2>
-        <p class="lede">The numbers behind my two LLM and NLP projects. Everything here is real project data or a clearly marked worked example. No model runs in your browser.</p>
+        <p class="lede">The numbers behind my LLM and NLP projects. Everything here is real project data or a clearly marked worked example. No model runs in your browser.</p>
       </div>
 
       <!-- Experiment: Player feedback -->
@@ -181,6 +181,19 @@
             </div>
           </div>
         </div>
+      </article>
+
+      <!-- Experiment: PromptProbe -->
+      <article class="lab-exp" aria-labelledby="exp3-title">
+        <header class="lab-exp-head">
+          <div>
+            <h3 id="exp3-title">Attacking a chatbot, then grading it</h3>
+            <p>PromptProbe runs 41 prompt-injection attacks, each in up to six disguises, against an offline DemoBot with four defense levels. Pick a level.</p>
+          </div>
+          <button class="text-link" data-open="promptprobe">PromptProbe case study</button>
+        </header>
+        <div id="probe-lab"></div>
+        <p class="source">Source: PromptProbe README and sample report, 181 cases per scan. DemoBot is a rule-based simulation, not an LLM; it exists to demonstrate the method and keep CI deterministic.</p>
       </article>
 
       <div class="models" aria-label="Models I have worked with">
